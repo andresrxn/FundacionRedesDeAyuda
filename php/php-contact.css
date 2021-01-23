@@ -1,0 +1,131 @@
+:root {
+    --grisoscuro: #060301;
+    --gris-claro: #000000f3;
+    --naranja: #ff4000;
+    --naranja-oscuro: #ff1702;
+    --celeste-claro: #0066ff;
+    --celeste-oscuro: #0306b3;
+    --blanco-hueso: #f5f5dc;
+    --azul: rgb(1, 0, 20);
+}
+
+section {
+    position: relative;
+    padding-top: 70px;
+    width: 90%;
+    margin: auto;
+}
+
+.container {
+    width: 100%;
+    padding: 0 25px;
+    color: var(--blanco-hueso);
+}
+
+.container h2 {
+    padding: 20px 0;
+    animation: ShowUp 1s forwards;
+    width: 100%;
+}
+
+.container__img {
+    display: flex;
+    justify-content: center;
+}
+
+.container p {
+    line-height: 1.5;
+    text-align: center;
+    opacity: 0;
+    animation: ShowUp 1s 0.4s forwards;
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    color: var(--grisoscuro);
+}
+
+.container img {
+    width: 300px;
+    max-width: 400px;
+    height: 200px;
+}
+
+p .icon {
+    color: var(--celeste-claro);
+}
+
+p .iconTwo {
+    color: rgb(245, 213, 30);
+}
+
+.container__social {
+    margin: 20px auto;
+    opacity: 0;
+    animation: ShowUp 1s 0.6s forwards;
+}
+
+.container__social ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.container__social ul li {
+    border-radius: 10px;
+    background: #fff;
+    background-size: cover;
+    background-position: center;
+    width: 130px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s ease;
+    margin: 0 10px;
+    box-shadow: 4px 12px 40px 6px rgba(0, 0, 0, 0.12);
+}
+
+.container__social ul li .icon {
+    display: block;
+    align-self: center;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.473));
+}
+
+.container__social .fb {
+    background: rgb(7, 10, 209);
+    color: #fff;
+    width: 15px;
+    height: 15px;
+    padding-top: 10px;
+    border-radius: 10px;
+}
+
+.container__social .ig {
+    background: linear-gradient(to top, rgb(245, 213, 30), rgb(253, 13, 13), rgb(184, 6, 207));
+    border-radius: 15px;
+    color: #ffffff;
+    padding: 5px;
+}
+
+.container__social ul li:active {
+    transform: scale(0.95);
+}
+
+.container__social ul li a {
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    word-break: break-all;
+    text-align: center;
+    color: var(--grisoscuro);
+    letter-spacing: 0.7px;
+}
+
+.more {
+    margin-top: 25px;
+}

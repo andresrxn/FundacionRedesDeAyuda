@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!--Default-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700;800&display=swap" rel="stylesheet">
+    <!--About-->
+    <title>Fundación Redes de Ayuda | Sitio Oficial</title>
+    <meta name="author" content="EquipoRedesdeAyuda">
+    <meta name="keywords" content="Fundacion, ayuda, Guatemala, necesidad, financiamiento, trabajo, ">
+    <meta name="description" content="Somos una Fundación Evangélica guatemalteca creada para ayudar a Madres Solteras, Personas Desempleadas y en Situación de Invalidéz...¡No Dejes Para Mañana la Ayuda que Puedes Dar Hoy!">
+
+    <link rel="icon" href="../img/logos/redes-de-ayuda-b&w.png">
+    <!--Styles-->
+    <link rel="stylesheet" href="php-contact.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/default.css">
+
+
+</head>
+
+<body>
+    <!--Loader Animation-->
+    <div class="loader" id="loader">
+        <div class="wrapper">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="shadows"></div>
+            <div class="shadows"></div>
+            <div class="shadows"></div>
+        </div>
+    </div>
+    <!--All Content-->
+    <!--Constant Header-->
+    <header>
+
+        <div class="header">
+            <div class="header-container">
+
+                <div class="header-container-logo">
+                    <a href="/">
+                        <!-- <video autoplay muted onmouseover="VideoController(true, this)">
+                            <source src="img/video/logo nuevo.mp4" type="video/mp4">
+                        </video> -->
+                        <img src="../img/logos/redes-de-ayuda.png" alt="Logo Fundación Redes de Ayuda">
+                    </a>
+                </div>
+
+                <div class="header-container-icons">
+                    <!-- <div class="header-container-donate">
+                        <span>
+                            <a href="">
+                                <i class="fas fa-gift icon"></i>
+                                Donar
+                            </a>
+                        </span>
+                    </div> -->
+                    <div class="header-container-phone" id="phone-icon">
+                        <span class="phone-icon">
+                            <i class="fas fa-phone icon"></i>
+                        </span>
+                        <div class="phone-number" id="phone-number">
+                            <span>
+                                ¡Llámanos!
+                            </span>
+                            <a href="tel:+50200000000" onClick="return(navigator.userAgent.match(/ Android | iPhone | mobile /i)) !=null;">+502 0000-0000</a>
+                            <div>
+                                <i class="fas fa-clock icon"></i> Las 24 Horas Disponibles
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header-container-burger">
+                        <div class="header-btn">
+                            <div class="header-btn-burger">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <nav id="nav">
+                    <ul class="header-menu">
+                        <li class="header-menu-content">
+                            <a href="">
+                                <i class="fas fa-home icon"></i> Inicio
+                            </a>
+                            <div class="header-menu-icon">
+                                <i class="fas fa-chevron-down icon-down" id="icon-down"></i>
+                            </div>
+                            <div class="header-menu-down">
+                                <ul class="header-menu-down-content">
+                                    <li class="header-menu-down-li">
+                                        <a href="#blog">
+                                            Últimas Noticias
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="header-menu-content">
+                            <a href="">
+                                <i class="fas fa-users icon"></i> Nosotros
+                            </a>
+                            <div class="header-menu-icon">
+                                <i class="fas fa-chevron-down icon-down" id="icon-down"></i>
+                            </div>
+                            <div class="header-menu-down">
+                                <ul class="header-menu-down-content">
+                                    <li class="header-menu-down-li">
+                                        <a href="">
+                                           Historia
+                                        </a>
+                                    </li>
+                                    <li class="header-menu-down-li">
+                                        <a href="">
+                                            Visión y Misión
+                                        </a>
+                                    </li>
+                                    <li class="header-menu-down-li">
+                                        <a href="">
+                                            Rubros de Ayuda
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="header-menu-content">
+                            <a href="">
+                                <i class="fas fa-calendar-check icon"></i> Proyectos
+                            </a>
+                            <div class="header-menu-icon">
+                                <i class="fas fa-chevron-down icon-down" id="icon-down"></i>
+                            </div>
+                            <div class="header-menu-down">
+                                <ul class="header-menu-down-content">
+                                    <li class="header-menu-down-li">
+                                        <a href="">
+                                           Historial de Proyectos
+                                        </a>
+                                    </li>
+                                    <li class="header-menu-down-li">
+                                        <a href="">
+                                            Proyectos a Futuro
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="header-menu-content">
+                            <a href="">
+                                <i class="fas fa-hand-holding-heart icon"></i> Donativos
+                            </a>
+                            <div class="header-menu-icon">
+                                <i class="fas fa-chevron-down icon-down" id="icon-down"></i>
+                            </div>
+                            <div class="header-menu-down">
+                                <ul class="header-menu-down-content">
+                                    <li class="header-menu-down-li">
+                                        <a href="">
+                                          Métodos de Donación
+                                        </a>
+                                    </li>
+                                    <li class="header-menu-down-li">
+                                        <a href="">
+                                           Transparencia de Donativos
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="header-menu-content">
+                            <a href="">
+                                <i class="fas fa-question icon"></i> FAQ
+                            </a>
+                            <div class="header-menu-icon">
+                                <i class="fas fa-chevron-down icon-down" id="icon-down"></i>
+                            </div>
+                            <div class="header-menu-down">
+                                <ul class="header-menu-down-content">
+                                    <li class="header-menu-down-li">
+                                        <a href="">
+                                         Sobre la Fundación
+                                        </a>
+                                    </li>
+                                    <li class="header-menu-down-li">
+                                        <a href="">
+                                          Sobre las Operaciones
+                                        </a>
+                                    </li>
+                                    <li class="header-menu-down-li">
+                                        <a href="">
+                                          Sobre Donaciones
+                                        </a>
+                                    </li>
+                                    <li class="header-menu-down-li">
+                                        <a href="">
+                                          Sobre Nuestra Iglesia
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="header-menu-content">
+                            <a href="">
+                                <i class="fas fa-comment icon"></i> Contacto
+                            </a>
+                            <div class="header-menu-icon">
+                                <i class="fas fa-chevron-down icon-down" id="icon-down"></i>
+                            </div>
+                            <div class="header-menu-down">
+                                <ul class="header-menu-down-content">
+                                    <li class="header-menu-down-li">
+                                        <a href="">
+                                         Mensaje Directo
+                                        </a>
+                                    </li>
+                                    <li class="header-menu-down-li">
+                                        <a href="">
+                                            Redes Sociales
+                                        </a>
+                                    </li>
+                                    <li class="header-menu-down-li">
+                                        <a href="">
+                                            Ubicación
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="header-menu-content">
+                            <span>
+                                ¡Síguenos!
+                            </span>
+                            <div class="nav-social-container">
+                                <div class="nav-social-card">
+                                    <a href="https://www.facebook.com/f.RedesdeAyuda" target="_blank">
+                                        <i class="fab fa-facebook-f icon"></i>
+                                    </a>
+                                </div>
+                                <div class="nav-social-card">
+                                    <a href="">
+                                        <i class="fab fa-instagram icon"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+
+                </nav>
+            </div>
+
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="container">
+                <div class="container__img">
+                    <img src="../img/svg/undraw_message_sent.svg" alt="">
+                </div>
+                <div class="container__des">
+                    <h2>
+                        ¡Enviado Correctamente!
+                    </h2>
+                    <p>
+                        Puedes visitar nuestras redes sociales para estar al tanto de nuestras actividades <i class="fas fa-user-plus icon"></i>
+                    </p>
+                </div>
+                <div class="container__social">
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/f.RedesdeAyuda/" target="_blank">
+                                <i class="fab fa-facebook-f icon fb"></i> Facebook
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fab fa-instagram icon ig"> </i> Instagram
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="more">
+                    <div class="more__container">
+                        <i class="fas fa-chevron-left iconTwo "></i>
+                        <a href="">Ir a la Página de Inicio</a>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-waves">
+                <div class="waves">
+                    <div class="wave wave-dark">
+                        <div class="water"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 32" preserveAspectRatio="none">
+                                <title>wave2</title>
+                                <path d="M350,17.32V32H0V17.32C116.56,65.94,175-39.51,350,17.32Z"></path>
+                            </svg></div>
+                        <div class="water"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 32" preserveAspectRatio="none">
+                                <title>wave2</title>
+                                <path d="M350,17.32V32H0V17.32C116.56,65.94,175-39.51,350,17.32Z"></path>
+                            </svg></div>
+                    </div>
+                    <div class="wave wave-light">
+                        <div class="water"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 32" preserveAspectRatio="none">
+                                <title>wave2</title>
+                                <path d="M350,17.32V32H0V17.32C116.56,65.94,175-39.51,350,17.32Z"></path>
+                            </svg></div>
+                        <div class="water"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 32" preserveAspectRatio="none">
+                                <title>wave2</title>
+                                <path d="M350,17.32V32H0V17.32C116.56,65.94,175-39.51,350,17.32Z"></path>
+                            </svg></div>
+                    </div>
+                    <div class="wave wave-lighter">
+                        <div class="water"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 32" preserveAspectRatio="none">
+                                <title>wave2</title>
+                                <path d="M350,17.32V32H0V17.32C116.56,65.94,175-39.51,350,17.32Z"></path>
+                            </svg></div>
+                        <div class="water"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 32" preserveAspectRatio="none">
+                                <title>wave2</title>
+                                <path d="M350,17.32V32H0V17.32C116.56,65.94,175-39.51,350,17.32Z"></path>
+                            </svg></div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-logo">
+                <div class="footer-logo-container">
+                    <img src="../img/logos/redes-de-ayuda-b&w.png" alt="">
+                    <p>
+                        <span>
+                            Redes de
+                        </span>
+                        <span>
+                            Ayuda
+                        </span>
+                        <span>
+                            Fundación
+                        </span>
+                    </p>
+                </div>
+            </div>
+            <div class="footer-social">
+                <div class="nav-social-container">
+                    <div class="nav-social-card">
+                        <a href="https://www.facebook.com/f.RedesdeAyuda" target="_blank">
+                            <i class="fab fa-facebook-f icon"></i>
+                        </a>
+                    </div>
+                    <div class="nav-social-card">
+                        <a href="">
+                            <i class="fab fa-instagram icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-legal">
+                <ul>
+                    <li>
+                        <a href="">
+                            Términos y Condiciones
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Políticas de Privacidad
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Prevención de Fraude
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-copy">
+                <p>
+                    &copy; 2020 | Fundación Redes de Ayuda
+                </p>
+            </div>
+            <div class="footer-atribute">
+                <p>
+                    Creado por <span>El Equipo Creativo de Redes de Ayuda</span>
+                </p>
+            </div>
+    </footer>
+
+
+
+    <script>
+        window.addEventListener("load", () => {
+            document.getElementById("loader").classList.toggle("loaderHide");
+        });
+    </script>
+
+    <script defer src="../js/all.min.js "></script>
+    <script defer src="../js/main.js "></script>
+
+    <!--Si ves esto... Dios te Bendiga :)-->
+</body>
+
+</html>
