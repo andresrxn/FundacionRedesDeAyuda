@@ -23,8 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 let comment = document.getElementById('comment');
 comment.addEventListener('click', () => {
-    let shadow = document.getElementById('shadow');
-    shadow.classList.add('visible');
+  
 
     let times = document.getElementById('times');
     times.style.display = "block";
@@ -44,27 +43,12 @@ times.addEventListener('click', () => {
     let bubbles = document.getElementById('float-bubbles');
     bubbles.classList.remove("bubble-active");
 
-    let shadow = document.getElementById('shadow');
-    shadow.classList.remove('visible');
 });
 
-let shadow = document.getElementById('shadow');
-shadow.addEventListener('click', () => {
-    shadow.classList.remove('visible');
 
-    let bubbles = document.getElementById('float-bubbles');
-    bubbles.classList.remove("bubble-active");
-
-    let times = document.getElementById('times');
-    let comment = document.getElementById('comment');
-    comment.style.display = "block";
-    times.style.display = "none";
-
-});
 let bubbles = document.getElementById('mail');
 bubbles.addEventListener('click', () => {
-    let shadow = document.getElementById('shadow');
-    shadow.classList.remove('visible');
+ 
     let bubbles = document.getElementById('float-bubbles');
     bubbles.classList.remove("bubble-active");
     let times = document.getElementById('times');
@@ -112,8 +96,7 @@ menuBtn.addEventListener('click', () => {
         times.style.display = "none";
         let bubbles = document.getElementById('float-bubbles');
         bubbles.classList.remove("bubble-active");
-        let shadow = document.getElementById('shadow');
-        shadow.classList.remove('visible');
+       
 
     } else {
         menuBtn.classList.remove('open');
